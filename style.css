@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    background-color: blanchedalmond;
+    justify-content: center;
 }
 
 .container {
@@ -10,7 +12,7 @@
 }
 
 .container>div{ /* called child combinator this selects all divs that are direct children of the class container */ 
-    border: 1px solid black;
+    border: 1px solid palevioletred;
     height: 25px;
     width: 25px;
   }
@@ -24,16 +26,10 @@
     height: 0;
   }
 
-  .grid-square{
-    width: 25px;
-    height: 25px;
-    border: 1px black;
-    background-color: white;
-  }
 
   .colored {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     background-color: aqua;
+  }
+  .differentcolored {
+    background-color: palegreen;
   }

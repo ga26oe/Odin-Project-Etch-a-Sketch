@@ -10,15 +10,16 @@ const container = document.querySelector(".container"); /* .container selects el
 
     
 }
-/* 
-document.querySelector("div").addEventListener( 
-    'mouseover', function() {
-        dcument.querySelector("div").classList.toggle("colored");
-    } ) */
-
 const squares = document.querySelectorAll('.grid-square');
 squares.forEach(square => {
-    square.addEventListener('mouseover', function(event) {
-        this.classList.toggle('colored');
+    square.addEventListener('mouseenter', function() {
+        this.classList.add('colored');
     });
 })
+
+squares.forEach(square => {
+    square.addEventListener('mouseout', function() {
+        this.classList.toggle('differentcolored');
+    });
+})
+
