@@ -33,3 +33,8 @@
   .differentcolored {
     background-color: palegreen;
   }
+
+  .btn {
+    box-sizing: content-box;    
+    color: palegreen;
+  }
